@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en" class="perfect-scrollbar-off nav-open">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer=""></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://tailwindui.com/css/components-v2.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Splitsheet</title>
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+  
+    <script>
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'qucXgWvvkPcwWt8suwkMusYX',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+
+  </body>
+</html>

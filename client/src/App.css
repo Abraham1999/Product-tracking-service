@@ -1,0 +1,362 @@
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper .card {
+  display: inline-block;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper-flexbox .card {
+  flex: 0 0 auto;
+  margin-right: 3px;
+}
+.card {
+  margin-right: 20px;
+}
+
+.card1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.scrolling-wrapper,
+.scrolling-wrapper-flexbox {
+  height: 80px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar,
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+
+.TableStyle {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.card-header-2 {
+  font-style: bold;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-header-name {
+  font-style: bold;
+  font-weight: bold;
+}
+
+.profile-button-2 {
+  float: right;
+  margin-top: 40px;
+}
+
+.Form-button {
+  float: right;
+  margin-right: 15px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.Collaborator-InputArray {
+  margin-bottom: 20px;
+}
+
+.Collaborator-Button-Div {
+  margin-left: 20px;
+  width: 200px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.Form-Project {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card-header-3 {
+  padding-top: 30px;
+  font-style: bold;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.Form-P {
+  font-weight: bold;
+}
+
+.Form-Para {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.projectNameText {
+  font-weight: bold;
+  font-style: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.ProjectBtn {
+  margin: 10px 0;
+  padding: 12px 10px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  line-height: 21px;
+  border: 1px solid #cad1d7;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 6px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.ProjectBtn:focus {
+  border-color: cornflowerblue;
+}
+
+.ProjectBtn5 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ProjectBtn2 {
+  margin-left: 30px;
+}
+.sectionDiv {
+  padding-bottom: 20px;
+}
+
+.AddButton {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signatureMargin {
+  margin-top: 20px;
+}
+
+.signatureCanvas {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.SpinnerWidth {
+  margin-top: 200px;
+  width: 5rem;
+  height: 5rem;
+}
+
+.spinnerReset {
+  margin-top: 250px;
+}
+
+.divReset {
+  margin-top: 150px;
+}
+
+.ProjectTop {
+  margin-top: 40px;
+}
+
+.ProjectCard {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.horizontal-line {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hr-div {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hr2-div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.horizontal-line3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.horizontal-line5 {
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.horizontal-line2 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.horizontal-line4 {
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.card-p1 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-p2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.project-top-card1 {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.project-top-card2 {
+  font-weight: bold;
+  padding-left: 20px;
+}
+.project-top-card3 {
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.collaborator-p1 {
+  margin-top: 20px;
+  margin-left: 10px;
+
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.collaborator-p2 {
+  margin-left: 10px;
+
+  font-size: 10px;
+}
+
+.CollaboratorMargin {
+  margin-bottom: 40px;
+}
+.fa-exclamation-triangle {
+  color: #f93154;
+}
+
+.fa-check-circle-o {
+  color: #00b74a;
+}
+
+.fa-check-square-o {
+  color: #00b74a;
+  font-size: 40px;
+}
+
+.fa-exclamation-triangle {
+  font-size: 40px;
+  color: #ffa601;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  /* display: relative; */
+}
+
+.PointerBadge {
+  cursor: pointer;
+}
+
+.BackBtn {
+  margin-left: 30px;
+}
+
+.signatureImage {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.dateFormatStyle {
+  margin-top: 15px;
+}
+
+.textCss {
+  font-size: 11px;
+}
+
+.imageDiv {
+  max-height: 5.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 3rem;; */
+}
+
+.collaboratorStatus {
+  margin-top: 3rem;
+}
+
+/* #e74c3c */
+.ModalMargin {
+  margin-top: 150px;
+}
+
+.ModalMargin2 {
+  margin-top: 150px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 375.98px) {
+  .card-p1 {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  .card-p2 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .project-top-card1 {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 9px;
+  }
+
+  .project-top-card2 {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 10px;
+  }
+  .project-top-card3 {
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 10px;
+  }
+}
