@@ -320,7 +320,7 @@ const Landing = () => {
            
           </nav>
           <p className="mt-8 text-center text-base text-gray-400">
-          © 2021 Global tracking service. All rights reserved.
+          © 2021 Global Delivery Company. All rights reserved.
           </p>
         </div>
       </footer>
