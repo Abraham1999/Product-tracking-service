@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { login } from "../../redux/actions/auth";
 import PropTypes from "prop-types";
 
-function Login({ login, isAuthenticated }) {
+function LoginPage({ login, isAuthenticated }) {
   const createHistory = require("history").createBrowserHistory;
 
   const [formData, setFormData] = useState({
@@ -133,11 +133,11 @@ function Login({ login, isAuthenticated }) {
   );
 }
 
-Login.propTypes = {
+LoginPage.propTypes = {
   login: PropTypes.func.isRequired,
   isAuthenticated: PropTypes.bool,
 };
 const mapStateToProps = (state) => ({
   isAuthenticated: state.user.isAuthenticated,
 });
-export default connect(mapStateToProps, { login })(Login);
+export default connect(mapStateToProps, { login })(LoginPage);

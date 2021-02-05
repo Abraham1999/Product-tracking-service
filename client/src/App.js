@@ -12,8 +12,8 @@ import { loadUser } from "./redux/actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 import { createBrowserHistory } from "history";
 import Landing from "./views/Landing/Landing";
-import Login from "./views/Auth/Login";
-import Register from "./views/Auth/Register";
+import Login from "./views/auth/Login";
+import Register from "./views/auth/Register";
 import Dashboard from "./views/Admin/Dashboard";
 import New from "./views/Admin/New"
 import Edit from "./views/Admin/Edit"

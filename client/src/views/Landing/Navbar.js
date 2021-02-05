@@ -9,7 +9,6 @@ const Navbar = ({ logout }) => {
 
   const user = useSelector((state) => state.user);
 
-
   if (user && user.user && user.user.admin === true) {
     return (
       <>
@@ -69,16 +68,12 @@ const Navbar = ({ logout }) => {
                     </button>
                   </div>
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                    <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                      alt="Workflow"
-                    />
+                    <h3 className="text-sm font-semibold">
+                      <a href="/" className="">
+                        {" "}
+                        Global Delivery Company
+                      </a>
+                    </h3>
                   </div>
                   <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                     <a
@@ -100,7 +95,6 @@ const Navbar = ({ logout }) => {
                     >
                       Logout
                     </a>
-                
                   </div>
                 </div>
               </div>
@@ -133,7 +127,6 @@ const Navbar = ({ logout }) => {
                 >
                   Logout
                 </a>
-              
               </div>
             </div>
           </nav>
@@ -200,16 +193,12 @@ const Navbar = ({ logout }) => {
                     </button>
                   </div>
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                    <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                      alt="Workflow"
-                    />
+                    <h3 className="text-sm font-semibold">
+                      <a href="/" className="">
+                        {" "}
+                        Global Delivery Company
+                      </a>
+                    </h3>
                   </div>
                   <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                     <a
@@ -251,7 +240,6 @@ const Navbar = ({ logout }) => {
                 >
                   Logout
                 </a>
-              
               </div>
             </div>
           </nav>
@@ -317,16 +305,12 @@ const Navbar = ({ logout }) => {
                     </button>
                   </div>
                   <div className="flex-shrink-0 flex items-center">
-                    <img
-                      className="block lg:hidden h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                    />
-                    <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                      alt="Workflow"
-                    />
+                    <h3 className="text-sm font-semibold">
+                      <a href="/" className="">
+                        {" "}
+                        Global Delivery Company
+                      </a>
+                    </h3>
                   </div>
                   <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                     <a
@@ -378,7 +362,6 @@ const Navbar = ({ logout }) => {
                 >
                   Login
                 </a>
-              
               </div>
             </div>
           </nav>

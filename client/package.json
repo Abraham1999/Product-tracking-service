@@ -1,5 +1,5 @@
 {
-  "name": "Package-monitoring",
+  "name": "frontend",
   "version": "1.1.0",
   "description": "Package monitoring",
   "repository": {
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "git+https://github.com/Abraham1999/Product-tracking-service.git"
   },
-  "homepage": "https://packagetracking.herokuapp.com/",
+  "homepage": "https://globaldeliverycompany.herokuapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -46,6 +46,5 @@
     "redux-thunk": "^2.3.0",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {},
   "proxy": "http://localhost:5000"
 }
