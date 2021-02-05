@@ -1,41 +1,26 @@
 {
-  "name": "split-sheet",
+  "name": "Package-monitoring",
   "version": "1.1.0",
-  "description": "Split sheet",
+  "description": "Package monitoring",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crudexec/splitsheet.git"
+    "url": "git+https://github.com/Abraham1999/Product-tracking-service.git"
   },
   "keywords": [
     "react",
-    "reactjs",
-    "argon",
-    "argon-react",
-    "design",
-    "design-react",
-    "argon-design",
-    "argon-design-react",
-    "kit",
-    "react-kit",
-    "argon-design-system",
-    "argon-design-system-react",
-    "design-system-react"
+    "reactjs"
   ],
-  "author": "Gidilounge",
+  "author": "Kolawole Abraham",
   "license": "MIT",
   "bugs": {
-    "url": "git+https://github.com/crudexec/splitsheet.git/issues"
+    "url": "git+https://github.com/Abraham1999/Product-tracking-service.git"
   },
-  "homepage": "https://splitsheet.herokuapp.com/",
+  "homepage": "https://packagetracking.herokuapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "compile-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css",
-    "minify-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/argon-design-system-react.scss src/assets/css/argon-design-system-react.css --source-map true"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,56 +32,20 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "@react-pdf/renderer": "^1.6.12",
     "axios": "^0.21.1",
-    "bootstrap": "4.3.1",
-    "chart.js": "^2.9.4",
-    "classnames": "2.2.6",
-    "draft-convert": "^2.1.10",
-    "draft-js": "^0.11.7",
-    "draftjs-to-html": "^0.9.1",
-    "final-form": "^4.20.1",
-    "final-form-arrays": "^3.0.2",
-    "headroom.js": "0.11.0",
-    "html-to-pdf": "^0.1.11",
-    "jspdf": "^1.4.1",
     "moment": "^2.24.0",
-    "node-sass": "4.13.1",
-    "nouislider": "14.1.1",
     "prop-types": "^15.7.2",
     "react": "16.12.0",
-    "react-bootstrap": "^1.4.3",
-    "react-chartjs-2": "^2.11.1",
-    "react-custom-scrollbars": "^4.2.1",
-    "react-datetime": "2.16.3",
     "react-dom": "16.12.0",
-    "react-draft-wysiwyg": "^1.14.5",
-    "react-dropzone": "^11.0.1",
-    "react-final-form": "^6.5.2",
-    "react-final-form-arrays": "^3.1.3",
-    "react-google-login": "^5.2.2",
-    "react-pdf": "^5.1.0",
     "react-redux": "^7.2.2",
     "react-router": "5.1.2",
     "react-router-dom": "5.1.2",
     "react-scripts": "^3.4.1",
-    "react-signature-canvas": "^1.0.3",
-    "reactstrap": "8.4.1",
-    "redraft": "^0.10.2",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "uuid": "^8.3.2"
   },
-  "devDependencies": {
-    "@types/googlemaps": "3.39.2",
-    "@types/markerclustererplus": "2.1.33",
-    "@types/react": "16.9.19",
-    "eslint-plugin-flowtype": "3.13.0",
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.8",
-    "jquery": "3.4.1",
-    "typescript": "3.7.5"
-  },
-  "proxy": "http://localhost:5002"
+  "devDependencies": {},
+  "proxy": "http://localhost:5000"
 }

@@ -1,11 +1,7 @@
 const mongoose = require("mongoose");
 
-const ProjectSchema = new mongoose.Schema(
+const ProductSchema = new mongoose.Schema(
   {
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "user",
-    },
     name: {
       type: String,
     },
@@ -18,10 +14,13 @@ const ProjectSchema = new mongoose.Schema(
     trackingId: {
       type: String,
     },
+    arrivalDate: {
+      type: String,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-module.exports = Project = mongoose.model("project", ProjectSchema);
+module.exports = Product = mongoose.model("product", ProductSchema);

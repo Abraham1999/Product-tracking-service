@@ -1,2 +1,0 @@
-# Splitsheet
-Gidilounge Splitsheet

@@ -7,9 +7,9 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
+
 } from "./types";
 import setAuthToken from "../../utils/setAuthToken";
-import { GetUserDetails } from "../../services/AuthService";
 
 //Load user
 export const loadUser = () => async (dispatch) => {
@@ -17,7 +17,7 @@ export const loadUser = () => async (dispatch) => {
     setAuthToken(localStorage.token);
   }
   try {
-    const res = await GetUserDetails();
+    const res = await  axios.get('/user/auth');
 
     dispatch({
       type: USER_LOADED,
@@ -92,34 +92,3 @@ export const logout = () => (dispatch) => {
   dispatch({ type: LOGOUT });
 };
 
-
-
-export const googleLogin = (email, name) => async dispatch => {
-  const config = {
-    headers: { 
-      'Content-Type': 'application/json'
-    }
-  }
-
-  const body = JSON.stringify({ email, name });
-
-  try {
-    const res = await axios.post('/user/google/login', body, config);
-
-    dispatch({
-      type: LOGIN_SUCCESS,
-      payload: res.data
-    });
-    dispatch(loadUser());
-
-  } catch (err) {
-    const errors = err.response.data.errors;
-
-    if (errors) {
-      alert("Problem logging in with Google")
-     }
-    dispatch({
-      type: LOGIN_FAIL
-    });
-  }
-};

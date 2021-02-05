@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema(
   {
-    googleId: String,
     email: {
       type: String,
       required: true,
@@ -18,24 +17,9 @@ const UserSchema = new Schema(
     password: {
       type: String,
     },
-    role: {
-      type: String,
-      enum: ["TALENT", "FAN"],
-    },
-    avatar: {
-      type: String
-    },
-    stars: {
-      type: Array,
-      default: []
-    },
-    resetPasswordToken: {
-      type: String,
-      default: "",
-    },
-    resetPasswordExpires: {
-      type: String,
-      default: "",
+    admin: {
+      type: Boolean,
+      default: false,
     },
   },
   {

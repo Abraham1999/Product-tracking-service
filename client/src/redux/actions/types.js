@@ -1,5 +1,4 @@
-export const SET_ALERT = 'SET_ALERT';
-export const REMOVE_ALERT = "REMOVE_ALERT";
+
 export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
 export const REGISTER_FAIL = "REGISTER_FAIL";
 export const USER_LOADED = "USER_LOADED";
@@ -8,13 +7,8 @@ export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT = "LOGOUT";
 export const ACCOUNT_DELETED = "ACCOUNT_DELETED";
-export const CREATE_PROJECT = "CREATE_PROJECT";
-export const GET_PROJECT = "GET_PROJECT";
-export const GET_PROJECTS = "GET_PROJECTS";
-export const PROJECT_ERROR = "PROJECT_ERROR";
-export const CLEAR_PROJECT = "CLEAR_PROJECT";
-export const UPDATE_PROJECT = "UPDATE_PROJECT";
-export const DELETE_PROJECT = "DELETE_PROJECT"
+export const PRODUCT_ERROR = "PRODUCT_ERROR";
+export const GET_PRODUCTS = "GET_PRODUCTS";
+export const GET_PRODUCT = "GET_PRODUCT";
 export const GET_USER = "GET_USER";
-export const GET_USER_ERROR = "GET_USER_ERROR";
-export const REMOVE_COLLABORATOR = "REMOVE_COLLABORATOR";
+export const DELETE_PRODUCT = "DELETE_PRODUCT";
