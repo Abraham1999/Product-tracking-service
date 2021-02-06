@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { register } from "../../redux/actions/auth";
 import PropTypes from "prop-types";
+import { Redirect } from "react-router-dom";
 
 function Register({ register, isAuthenticated }) {
   const createHistory = require("history").createBrowserHistory;
@@ -23,11 +24,9 @@ function Register({ register, isAuthenticated }) {
     register({ name, email, password });
   };
 
-  //redirect to dashboard
+  //redirect to home
   if (isAuthenticated) {
-    let history = createHistory();
-    history.push("/");
-    window.location.reload();
+    return <Redirect to="/" />;
   }
   return (
     <>

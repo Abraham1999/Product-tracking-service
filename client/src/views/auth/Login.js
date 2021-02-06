@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { login } from "../../redux/actions/auth";
 import PropTypes from "prop-types";
+import { Redirect } from "react-router-dom";
 
 function LoginPage({ login, isAuthenticated }) {
-  const createHistory = require("history").createBrowserHistory;
 
   const [formData, setFormData] = useState({
     email: "",
@@ -22,11 +22,9 @@ function LoginPage({ login, isAuthenticated }) {
     login(email, password);
   };
 
-  //redirect to dashboard
+  //redirect to home
   if (isAuthenticated) {
-    let history = createHistory();
-    history.push("/");
-    window.location.reload();
+    return <Redirect to="/" />;
   }
   return (
     <>
