@@ -1,4 +1,4 @@
-![react-redux-app-template](https://repository-images.githubusercontent.com/208453250/35dbd380-52a2-11ea-870e-335ecbd918d2)
+![package-tracking-service-template](https://res.cloudinary.com/unitix/image/upload/v1676214263/android-chrome-512x512_umihpx.png)
 
 ## Table of contents
 
