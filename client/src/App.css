@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -39,7 +43,6 @@
 .scrolling-wrapper-flexbox::-webkit-scrollbar {
   display: none;
 }
-
 
 .TableStyle {
   margin-top: 40px;
@@ -115,7 +118,7 @@
   font-size: 14px;
   line-height: 21px;
   border: 1px solid #cad1d7;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border-radius: 6px;
   display: inline-block;
   -webkit-box-sizing: border-box;

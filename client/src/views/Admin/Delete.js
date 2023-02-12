@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { getProducts } from "../../redux/actions/product";
-import DeleteTable from "./DeleteTable";
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { getProducts } from '../../redux/actions/product';
+import DeleteTable from './DeleteTable';
 
 const All = ({ getProducts, product: { products } }) => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const All = ({ getProducts, product: { products } }) => {
 };
 
 All.propTypes = {
-    getProducts: PropTypes.func.isRequired,
+  getProducts: PropTypes.func.isRequired,
   product: PropTypes.object.isRequired,
 };
 

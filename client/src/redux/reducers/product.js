@@ -3,7 +3,7 @@ import {
   PRODUCT_ERROR,
   GET_PRODUCT,
   DELETE_PRODUCT,
-} from "../actions/types";
+} from '../actions/types';
 
 const initialState = {
   product: null,
@@ -12,7 +12,7 @@ const initialState = {
   error: {},
 };
 
-export default function (state = initialState, action) {
+export default function Product(state = initialState, action) {
   const { type, payload } = action;
 
   switch (type) {

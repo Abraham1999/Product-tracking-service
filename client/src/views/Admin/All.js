@@ -1,17 +1,17 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { getProducts } from "../../redux/actions/product";
-import AllTable from "./AllTable";
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { getProducts } from '../../redux/actions/product';
+import AllTable from './AllTable';
 
 const All = ({ getProducts, product: { products } }) => {
   useEffect(() => {
     getProducts();
   }, [getProducts]);
 
-  console.log(products)
+  console.log(products);
   return (
-    <> 
+    <>
       <AllTable products={products} />
     </>
   );

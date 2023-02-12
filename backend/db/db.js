@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-require('dotenv').config()
+require('dotenv').config();
 const db = process.env.mongoURI;
 
 const connectDB = async () => {
@@ -8,16 +8,13 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-       useFindAndModify: false
-    })
+      useFindAndModify: false,
+    });
     console.log('MongoDB connected');
   } catch (err) {
     console.error(err.message);
-    //Exit process with failure 
-    process.exit(1); 
+    //Exit process with failure
+    process.exit(1);
   }
-}
-module.exports = connectDB;       
-
-    
-        
+};
+module.exports = connectDB;
