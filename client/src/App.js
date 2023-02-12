@@ -12,14 +12,14 @@ import store from './redux/store/store';
 import { loadUser } from './redux/actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import { createBrowserHistory } from 'history';
-import Landing from './views/Landing/Landing';
-import Login from './views/auth/Login';
-import Register from './views/auth/Register';
-import Dashboard from './views/Admin/Dashboard';
-import New from './views/Admin/New';
-import Edit from './views/Admin/Edit';
-import Delete from './views/Admin/Delete';
-import All from './views/Admin/All';
+import Landing from './pages/Landing/Landing';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
+import Dashboard from './pages/Admin/Dashboard';
+import New from './pages/Admin/New';
+import Edit from './pages/Admin/Edit';
+import Delete from './pages/Admin/Delete';
+import All from './pages/Admin/All';
 
 const hist = createBrowserHistory();
 
